@@ -1,0 +1,29 @@
+{
+  "name": "cash-machine",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --watch ./ ./index.js",
+    "build": "node ./index.js",
+    "test": "tape tests/**/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandocamargo/cash-machine.git"
+  },
+  "author":
+    "Fernando Camargo <camargodelbuono@gmail.com> (http://fernandocamargo.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fernandocamargo/cash-machine/issues"
+  },
+  "homepage": "https://github.com/fernandocamargo/cash-machine#readme",
+  "devDependencies": {
+    "nodemon": "^1.17.2",
+    "tape": "^4.9.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
