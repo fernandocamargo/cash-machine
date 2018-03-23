@@ -13,7 +13,7 @@ const app = ({ params: { value } }, response) => {
   }
 };
 
-const welcome = () => console.log(`Checkout http://localhost:${port}`);
+const welcome = () => console.log(`Running @ http://localhost:${port}`);
 
 module.exports = express()
   .get('/:value?', app)
