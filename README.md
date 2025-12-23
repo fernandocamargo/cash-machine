@@ -44,18 +44,24 @@ Result: [Empty Set]
 ### Prerequisites
 
 #### Using Docker (Recommended)
-- Docker installed on your system
+- [Docker](https://www.docker.com/) installed on your system
 - No Node.js installation required
 
 #### Using Node.js Directly
-- Node.js (version 10 or higher recommended)
-- Yarn package manager
+- [Node.js](https://nodejs.org/) (version 10 or higher recommended)
+- [Yarn](https://yarnpkg.com/) package manager
+
+### Technologies Used
+
+- [Express](https://expressjs.com/) - Fast, unopinionated, minimalist web framework for Node.js
+- [Nodemon](https://nodemon.io/) - Utility that monitors for changes and automatically restarts the server
+- [Tape](https://github.com/ljharb/tape) - TAP-producing test harness for Node.js
 
 ### Available Scripts
 
-- `yarn start` - Start the application in development mode with auto-reload (uses nodemon)
+- `yarn start` - Start the application in development mode with auto-reload (uses [nodemon](https://nodemon.io/))
 - `yarn build` - Start the application in production mode
-- `yarn test` - Run tests using tape
+- `yarn test` - Run tests using [tape](https://github.com/ljharb/tape)
 
 ### How to Run
 
