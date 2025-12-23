@@ -35,3 +35,87 @@ Result: throw InvalidArgumentException
 Entry: NULL
 Result: [Empty Set]
 ```
+
+### Requirements
+
+#### Using Docker (Recommended)
+- Docker installed on your system
+- No Node.js installation required
+
+#### Using Node.js Directly
+- Node.js (version 10 or higher recommended)
+- Yarn package manager
+
+### Available Scripts
+
+- `yarn start` - Start the application in development mode with auto-reload (uses nodemon)
+- `yarn build` - Start the application in production mode
+- `yarn test` - Run tests using tape
+
+### How to Run
+
+#### Using Docker (Recommended)
+
+The easiest way to run this project is using Docker, which ensures it works in any environment:
+
+1. Build the Docker image:
+```bash
+docker build -t cash-machine .
+```
+
+2. Run the container:
+```bash
+docker run -p 1337:1337 cash-machine
+```
+
+Or run in detached mode (background):
+```bash
+docker run -d -p 1337:1337 --name cash-machine cash-machine
+```
+
+3. To stop the container:
+```bash
+# If running in foreground, press Ctrl+C
+
+# If running in detached mode:
+docker stop cash-machine
+docker rm cash-machine
+```
+
+The application will be available at `http://localhost:1337`
+
+#### Using Node.js Directly
+
+If you prefer to run without Docker:
+
+1. Install dependencies:
+```bash
+yarn install
+```
+
+2. Start the application:
+```bash
+yarn build
+```
+
+Or for development with auto-reload:
+```bash
+yarn start
+```
+
+3. To stop the application, press `Ctrl+C`
+
+#### Testing the API
+
+Once running, you can test the cash machine by making GET requests:
+
+```bash
+# Withdraw $30
+curl http://localhost:1337/30
+
+# Withdraw $80
+curl http://localhost:1337/80
+
+# Invalid amount (will return error)
+curl http://localhost:1337/125
+```

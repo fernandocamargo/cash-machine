@@ -12,8 +12,7 @@
     "type": "git",
     "url": "git+https://github.com/fernandocamargo/cash-machine.git"
   },
-  "author":
-    "Fernando Camargo <camargodelbuono@gmail.com> (http://fernandocamargo.com)",
+  "author": "Fernando Camargo <camargodelbuono@gmail.com> (http://fernandocamargo.com)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/fernandocamargo/cash-machine/issues"
@@ -25,5 +24,6 @@
   },
   "dependencies": {
     "express": "^4.16.3"
-  }
+  },
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
 }
