@@ -1,4 +1,7 @@
 # Cash Machine
+
+## Requirements
+
 ### The problem
 
 > Develop a solution that simulate the delivery of notes when a client does a withdraw in a cash machine.
@@ -36,7 +39,9 @@ Entry: NULL
 Result: [Empty Set]
 ```
 
-### Requirements
+## Installation and Setup
+
+### Prerequisites
 
 #### Using Docker (Recommended)
 - Docker installed on your system
