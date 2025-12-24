@@ -1,5 +1,7 @@
 # Cash Machine
 
+Optimal cash withdrawal calculator with RESTful API using functional programming patterns
+
 ## Requirements
 
 ### The problem
